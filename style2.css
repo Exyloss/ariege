@@ -7,16 +7,17 @@ nav {
     width: 100%;
     margin: auto;
     background-color: #191919;
-    position: sticky;
     top: 10px;
     margin-bottom: 20px;
-    border-radius: 10px;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    background-color: #191919;
+    display: flex;
+    flex-direction: row;
 }
 
 nav ul li {
@@ -24,21 +25,14 @@ nav ul li {
     width: 25%;
     text-align: center;
     position: relative;
-}
 
-nav ul::after {
-    content: "";	
-    display: table;
-    clear: both;
 }
 
 nav a {
     display: block;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
     padding: 10px 0px;
     color: white;
-    border-radius: 10px;
 }
 
 nav a:hover {
@@ -51,25 +45,29 @@ nav a:hover {
     background-color: #212121;
     width: 100%;
     position: absolute;
-    z-index: 1000;
+
 
 }
+
 nav ul li:hover .sous{
     display: block;
 }
+
 .sous li {
     float: none;
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
+
 .sous a {
     padding: 10px;
-    color: white;
     border-radius: 0px;
 }
+
 .sous a:hover {
     background-color: black;
 }
+
 .deroulant > a::after {
     content:" ▼";
     font-size: 12px;
