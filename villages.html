@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css" id="style">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+<body>
+	<h1 style="color: white;">Beaux villages d'Ariège</h1>
+	<nav>
+		<ul class="navbar">
+			<li class="active"><a href="index.html" >Accueil</a></li>
+			<li class="deroulant"><a>Lieux à visiter</a>
+				<ul class="sous">
+					<li><a href="villages.html">Les villages</a></li>
+					<li><a href="chateau.html">Les châteaux</a></li>
+				</ul>
+			</li>
+			<li><a href="gastronomie.html">Les spécialités culinaires</a></li>
+			<li><a href="abonnement.html">Abonnement</a></li>
+		</ul>
+	</nav>
+	<div id="main-container-chateau">
+		<div class="left-container">
+			<h2 align="center">Liens</h2>
+			<ul>
+				<li><a href="https://www.saint-lizier.com/" class="leftlink" target="blank">Saint-Lizier</a></li>
+				<li><a href="http://www.camon.fr/" class="leftlink" target="blank">Camon</a></li>
+				<li><a href="http://mairie-mirepoix.fr/" class="leftlink" target="blank">Mirepoix</a></li>
+				<li><a href="http://www.seix.fr/" class="leftlink" target="blank">Seix</a></li>
+			</ul>
+		</div>
+		<div id="second-container-chateau">
+			<div class="container_chateau">
+				<img src="img/foix_village.jfif">
+				<p>Saint-Lizier :<br><br>Situé sur une petite colline dans la vallée du Salat à quelques kms de St Girons capitale du Couserans, St Lizier est dominé par l'imposante silhouette du palais des évêques du XIVe siècle, face aux pics enneigés des Pyrénées. Ancienne cité gallo-romaine, Evêché du VI ème siècle, la cité est classée parmi les plus beaux villages de France. St Lizier est situé sur un des chemins de St Jacques de Compostelle et possède de nombreux monuments d’époque romane.</p>	
+			</div>
+			<div class="container_chateau">
+				<img src="img/camon2.jpg">
+				<p>Camon :<br><br>Le village forteresse est classé parmi les plus beaux villages de France, il se serre autour de son abbaye château et offre un beau panorama sur un paysage de côteaux verdoyants où autrefois l’on cultivait la vigne. Il est situé dans la vallée de L’Hers à la limite du département. Camon est également nommé le village aux cent rosiers car de nombreux rosiers ornent les ruelles et les façades du village.</p>
+			</div>
+			<div class="container_chateau">
+				<img src="img/mirepoix2.jfif">
+				<p>Mirepoix :<br><br>Belle petite bastide médiévale du pays Cathare, la place centrale est entourée de maisons à colombages sur galeries de bois. A visiter également la cathédrale dédiée à St Maurice qui possède la nef la plus large de France et non loin de là l’Eglise de Vals et le Château de Lagarde.</p>
+			</div>
+			<div class="container_chateau">
+				<img src="img/seix.jfif">
+				<p>Seix :<br><br>Village typique des montagnes Ariégeoises, traversé par le Salat. Sa situation géographique au carrefour des vallées, au pied de la montagne et des cols frontaliers a fait de lui un village frontière important jusqu’à la fin du 19ème siècle. Le village est dominé par son "château du Roy," demeure datant du XVIe siècle.
+</p>
+			</div>
+		</div>
+	</div>
+	<div id="map" style=' height: 300px; border: 1px solid black; border-radius: 5px; margin-bottom: 15px; margin-top: 15px; display: block;'>
+	</div>
+	
+  	<div style="margin-bottom: 65px"></div>
+	<footer>
+		<p style="color: white;text-indent: 1.5em">Contact : contact@ariege.fr (Ceci est une adresse factice)</p>
+		<button style="color: white;" class="btn_dark" onclick="darkTheme()">Thème sombre</button>
+		<div>
+			<p style="color: white;margin-right: 15px;font-size: 0.6em">Sponsored by</p><img src="img/hfc.png" style="height:15px;width:40px">
+		</div>
+	</footer>
+</body>
+</html>
+<script>//Pour utiliser l'API Leaflet, le code javascript doit forcément être dans le fichier HTML
+
+var villes = {
+	"Saint-Lizier": { "lat": 43.0025191, "lon": 1.1354926 },
+	"Camon": { "lat": 43.0210971, "lon": 1.96668 },
+	"Mirepoix": { "lat": 43.0880677, "lon": 1.874318 },
+	"Seix": { "lat": 42.8656826, "lon": 1.2032212 }
+};
+	// Fonction d'initialisation de la carte
+function initMap() {
+	// Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
+	macarte = L.map('map').setView([42.9638998, 1.6053807], 8);
+	// Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
+	L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+		attribution: 'OpenStreetMap',
+		minZoom: 4,
+		maxZoom: 19
+	}).addTo(macarte);
+	// Nous parcourons la liste des villes
+	for (ville in villes) {
+		var marker = L.marker([villes[ville].lat, villes[ville].lon]).addTo(macarte);
+		marker.bindPopup(ville);
+	}               	
+}
+
+window.onload = function(){
+		// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
+	initMap(); 
+}
+</script>

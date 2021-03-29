@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css" id="style">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+<body>
+	<h1 style="color: white;">Les châteaux Ariègeois</h1>
+	<nav>
+		<ul class="navbar">
+			<li class="active"><a href="index.html" >Accueil</a></li>
+			<li class="deroulant"><a>Lieux à visiter</a>
+				<ul class="sous">
+					<li><a href="villages.html">Les villages</a></li>
+					<li><a href="chateau.html">Les châteaux</a></li>
+				</ul>
+			</li>
+			<li><a href="gastronomie.html">Gastronomie</a></li>
+			<li><a href="abonnement.html">Abonnement</a></li>
+		</ul>
+	</nav>
+	<div id="main-container-chateau">
+		<div class="left-container">
+			<h2 align="center">Liens</h2>
+			<ul>
+				<li><a href="http://www.foix-tourisme.com/accueil/chateau-de-foix" class="leftlink" target="blank">Château de Foix</a></li>
+				<li><a href="https://www.pyrenees-ariegeoises.com/a-voir-a-faire/a-decouvrir-0/visites/chateau-d-usson-et-maison-du-patrimoine-1790849" class="leftlink" target="blank">Château d'Usson</a></li>
+				<li><a href="http://www.montsegur.fr" class="leftlink" target="blank">Château de Montségur</a></li>
+				<li><a href="https://www.tourisme-occitanie.com/le-chateau-de-roquefixade/roquefixade" class="leftlink" target="blank">Château de Roquefixade</a></li>
+			</ul>
+		</div>
+		<div id="second-container-chateau">
+			<div class="container_chateau">
+				<img src="img/foix.jpg">
+				<p>Le château de Foix est un ancien château du XIIᵉ siècle, dont l'origine semble remonter au Xᵉ siècle, remanié à plusieurs reprises et très restauré au XIXᵉ siècle, qui se dresse sur la commune de Foix dans le département de l'Ariège en région Occitanie. Lieu de tourisme important, il est renommé dans toute l'Ariège comme haut-lieu cathare. Il fait l'objet d'un classement au titre des monuments historiques par la liste de 1840.</p>	
+			</div>
+			<div class="container_chateau">
+				<img src="img/usson.jfif">
+				<p>Situé à la frontière de la vicomté de Sault, il est mentionné pour la première fois en 1035. Ce fut le château des anciens seigneurs de So et d’Alion.Après avoir connu les turpitudes du catharisme, puis devenu inutile avec l'éloignement de la frontière espagnole, il fut démantelé en 1638 sur ordre de Richelieu. En 1712 et 1713, il sera transformé en demeure. avec trois tours ajoutées. Ses derniers propriétaires nobles seront expulsés par la Révolution qui contribuera à en faire une carrière de pierres.</p>
+			</div>
+			<div class="container_chateau">
+				<img src="img/montsegur.jpg">
+				<p>Le château de Montségur, construit en 1206, est un château languedocien qualifié de « cathare », situé dans la commune de Montségur, dans le département français de l'Ariège et la région Occitanie. Ce château fut implanté à l'emplacement de l'ancien castrum et fut construit à la demande de Raymond de Péreille qui constituait, jusqu'au siège de 1244, un lieu de séjour des cathares et des faydits. Il a été très partiellement restauré après la reddition cathare de 1244 par la famille du nouveau seigneur des lieux, Guy II de Lévis.</p>
+			</div>
+			<div class="container_chateau">
+				<img src="img/Roquefixade.jpg">
+				<p>Ce château appartenait à la famille de Villemur, vassaux des comtes de Foix. Il fut repris par Raymond VII, comte de Toulouse en 1243 suite au conflit entre les deux maisons.Malgré sa position stratégique à proximité du château de Montségur et bien qu'ayant servit de refuge à quelques Parfaits, le château de Roquefixade n'a pas connu de combat significatif. Il devient une forteresse royale à la fin de la croisade contre les albigeois.</p>
+			</div>
+		</div>
+	</div>
+	<div id="map" style=' height: 300px; border: 1px solid black; border-radius: 5px; margin-bottom: 15px; margin-top: 15px; display: block;'>
+	</div>
+	
+  	<div style="margin-bottom: 65px"></div>
+	<footer>
+		<p style="color: white;text-indent: 1.5em">Contact : contact@ariege.fr (Ceci est une adresse factice)</p>
+		<button style="color: white;" class="btn_dark" onclick="darkTheme()">Thème sombre</button>
+		<div>
+			<p style="color: white;margin-right: 15px;font-size: 0.6em">Sponsored by</p><img src="img/hfc.png" style="height:15px;width:40px">
+		</div>
+	</footer>
+</body>
+</html>
+<script>//Pour utiliser l'API Leaflet, le code javascript doit forcément être dans le fichier HTML
+
+var villes = {
+	"Château de Foix": { "lat": 42.9657002, "lon": 1.6047597 },
+	"Château de Montségur": { "lat": 42.8757262, "lon": 1.8325002 },
+	"Château de Roquefixade": { "lat": 42.9386805, "lon": 1.7531815 },
+	"Château d'Usson": { "lat": 42.7355493, "lon": 2.0874808 }
+};
+	// Fonction d'initialisation de la carte
+function initMap() {
+	// Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
+	macarte = L.map('map').setView([42.9638998, 1.6053807], 8);
+	// Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
+	L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+		// Il est toujours bien de laisser le lien vers la source des données
+		attribution: 'OpenStreetMap',
+		minZoom: 4,
+		maxZoom: 19
+	}).addTo(macarte);
+	// Nous parcourons la liste des villes
+	for (ville in villes) {
+		var marker = L.marker([villes[ville].lat, villes[ville].lon]).addTo(macarte);
+		marker.bindPopup(ville);
+	}               	
+}
+
+window.onload = function(){
+		// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
+	initMap(); 
+}
+</script>

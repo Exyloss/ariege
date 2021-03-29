@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css" id="style">
+  <script src="https://risibank.fr/script/risibank.js"></script>
+  <link href="https://risibank.fr/script/risibank.css" rel="stylesheet" type="text/css" media="all">
+  <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<h1 style="color: white;">Abonnement / Contact</h1>
+  <nav>
+    <ul class="navbar">
+      <li class="active"><a href="index.html" >Accueil</a></li>
+      <li class="deroulant"><a>Lieux à visiter</a>
+        <ul class="sous">
+          <li><a href="villages.html">Les villages</a></li>
+          <li><a href="chateau.html">Les châteaux</a></li>
+        </ul>
+      </li>
+      <li><a href="gastronomie.html">Gastronomie</a></li>
+      <li><a href="abonnement.html">Abonnement</a></li>
+    </ul>
+  </nav>
+  <div id="div_formulaire">
+	<fieldset align="center" id="formulaire">
+		<legend><h1>Abonnement</h1></legend>
+		<form method="post">
+    		<div>
+     		   	<label for="name">Pseudo :</label>
+      		  <input type="text" id="name" name="user_name" required placeholder="Entrez votre pseudo" pattern="[A-Za-z0-9]{1,12}" minlength="2" maxlength="12">
+    		</div>
+    		<div>
+      	  		<label for="mail">E-mail :</label>
+      	  		<input type="email" id="mail" name="user_mail" required placeholder="utilisateur@domaine.fr">
+    		</div>
+        <div>
+          <label for="password">Mot de passe : </label>
+          <input type="password" name="password" id="password" minlength="8" placeholder="Au moins 8 caractères" required>
+        </div>
+    		<div>
+    			<label for="birthday">Votre date de naissance :</label>
+    			<input type="date" id="birthday" name="anniversaire" max="2021-03-04" min="1900-01-01" required>
+    		</div>
+    		<div>
+      			<label for="genre">Qualité :</label>
+      			<input type="radio" required name="title" id="r1" value="M." required><label for="r1">M.</label>
+      			<input type="radio" required name="title" id="r2" value="Mme." required><label for="r2">Mme.</label>
+    			
+    		</div>
+        <div>
+            <label for="nat">Nationalité : </label>
+            <select id="nat" name="nat" required>
+              <option value="Autre">Autre</option>
+              <option value="Français">Français</option>
+              <option value="Belge">Belge</option>
+              <option value="Suisse">Suisse</option>
+            </select>
+      </div>
+    		<div class="button">
+        		<button type="submit" onclick="formEnvoi()" class="btn">Valider</button>
+            <button type="reset" class="btn">Annuler</button>
+    		</div>
+		</form>
+	</fieldset>
+  <fieldset align="center" id="form_contact">
+    <legend><h1>Contact</h1></legend>
+    <form method="get">
+      <div>
+        <label for="msg">Message</label><br>
+        <textarea rows="5" cols="40" id="msg"></textarea>
+        <a href="javascript:void(0)" onclick="RisiBank.activate('msg')">
+          <img style="width: 120px" src="https://risibank.fr/src/picts/banner-light.png">
+        </a>
+      </div>
+      <div class="button">
+        <button type="submit" onclick="formEnvoi2()" class="btn">Envoyer</button>
+        <button type="reset" class="btn">Effacer</button>
+      </div>
+    </form>
+    <p id="contact"></p>
+  </fieldset>
+  </div>
+  <div style="margin-bottom: 65px"></div>
+	<footer>
+	<p style="color: white;text-indent: 1.5em">Contact : contact@ariege.fr (Ceci est une adresse factice)</p>
+  <button style="color: white;" class="btn_dark" onclick="darkTheme()">Thème sombre</button>
+	<div>
+		<p style="color: white;margin-right: 15px;font-size: 0.6em">Sponsored by</p><img src="img/hfc.png" style="height:15px;width:40px">
+	</div>
+</footer>
+</body>
+</html>

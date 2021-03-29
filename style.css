@@ -1,0 +1,280 @@
+*{
+
+    font-family: "Century Gothic", Arial;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    background-color: #191919;
+    position: sticky;
+    top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after {
+    content: "";	
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+    color: white;
+    border-radius: 10px;
+}
+
+nav a:hover {
+	transition: 0.3s;
+    background-color: black;
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+
+}
+nav ul li:hover .sous{
+    display: block;
+}
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a {
+    padding: 10px;
+    color: black;
+    border-radius: 0px;
+}
+.sous a:hover {
+    background-color: RGBa(200,200,200,0.3);
+}
+.deroulant > a::after {
+    content:" ▼";
+    font-size: 12px;
+}
+
+#slides {
+	width: 600px;
+	height: 400px; 
+	margin: auto;
+	border-radius: 5px;
+}
+
+#main-container {
+	width: 600px;
+	height: auto;
+	margin: auto;
+
+	border-radius: 5px;
+	background-color: white;
+}
+
+#main-container p {
+	padding: 15px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.7em;
+}
+
+.logo_ariege {
+	float: left;
+	height: 75px;
+}
+
+.container:hover {
+	transition: 0.3s;
+}
+
+.container {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	height: auto;
+	transition: height 2s;
+
+}
+
+.img_container {
+	border-radius: 5px 0px 0px 0px;
+	height: 165px;
+	width: 165px;
+	float: left;
+	margin-right: 15px;
+}
+
+.container button {
+	border: none;
+	border-radius: 0px 0px 5px 5px;
+	background-color: #C6C6C6;
+}
+
+.container p {
+	margin-right: 15px;
+}
+
+.recette {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+footer {
+	background-color: #191919;
+	position: fixed;
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: auto;
+	padding: auto;
+}
+
+form div {
+	margin-bottom: 15px;
+}
+
+input:invalid {
+	border-color: #C22727;
+}
+
+input {
+	border-radius: 5px;
+	border: black solid 2px;
+}
+
+#formulaire {
+	border-radius: 20px;
+	border: 0px;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#form_contact {
+	border-radius: 20px;
+	border: 0px solid white;
+}
+
+.container_chateau {
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	margin-bottom: 15px;
+	height: auto;
+	border-radius: 5px;
+}
+
+.container_chateau img {
+	width: 200px;
+	height: 150px;
+	border-radius: 5px;
+}
+
+.container_chateau p {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+body {
+	background-image: url('img/paysage4.jfif');
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size:  auto 100%;
+}
+
+
+
+#div_formulaire {
+	background-color: white;
+	border-radius: 20px;
+	width: 400px;
+	margin: auto;
+}
+
+.left-container {
+	flex: 1;
+	background-color: #191919;
+	color: white;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+
+#main-container-chateau {
+	display: flex;
+	flex-direction: row;
+}
+
+#second-container-chateau {
+	flex: 7;
+}
+
+.left-container ul li a {
+	color: white;
+	text-decoration: none;
+	margin-bottom: 15px;
+
+}
+
+.left-container ul li a:hover {
+	border-bottom: solid #9E9E9E 1px;
+	color: #9E9E9E;
+
+}
+
+
+
+.left-container ul li{
+	margin-bottom: 15px;
+}
+
+.voir_plus:hover {
+	transition: 0.3s;
+	background-color: #6B6B6B;
+}
+
+#main-container-recette {
+	display: flex;
+}
+
+#recette_total {
+	flex: 7;
+}
+
+.btn_dark {
+	background-color: #191919;
+	border: solid black 1px;
+}
+
+
+::-webkit-scrollbar{display: none;}
