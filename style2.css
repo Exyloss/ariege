@@ -287,5 +287,8 @@ body {
 	border: solid black 1px;
 }
 
+leaflet-popup-content {
+	color: blue;
+}
 
 ::-webkit-scrollbar{display: none;}
