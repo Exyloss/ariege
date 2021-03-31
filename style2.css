@@ -166,7 +166,6 @@ input:invalid {
 input, select {
 	border-radius: 5px;
 	border: black solid 2px;
-	color: black;
 	background-color: #212121;
 	color: white;
 }
