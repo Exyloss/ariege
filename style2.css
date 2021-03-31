@@ -182,6 +182,10 @@ input, select {
 	border: 0px;
 }
 
+label {
+	color:white;
+}
+
 #form_contact {
 	border-radius: 20px;
 	border: 0px solid #191919;
