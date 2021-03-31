@@ -159,6 +159,10 @@ form div {
 	margin-bottom: 15px;
 }
 
+.button button {
+	color:white;
+}
+
 input:invalid {
 	border-color: #C22727;
 }
