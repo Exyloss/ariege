@@ -66,6 +66,11 @@ nav ul li:hover .sous{
     background-color: black;
 }
 
+.deroulant > a::after {
+	content: " ▼";
+	font-size: 12px;
+}
+
 #slides {
 	width: 600px;
 	height: 400px; 
@@ -90,10 +95,6 @@ h1 {
 	font-size: 2.7em;
 }
 
-.container:hover {
-	transition: 0.3s;
-}
-
 .container {
 	border: 1px solid black;
 	border-radius: 5px;
@@ -102,8 +103,6 @@ h1 {
 	flex-direction: column;
 	background-color: white;
 	height: auto;
-	transition: height 2s;
-
 }
 
 .img_container {
@@ -177,6 +176,7 @@ input {
 }
 
 .container2 img {
+	transition: 0.5s;
 	width: 200px;
 	height: 150px;
 	border-radius: 5px;
@@ -245,6 +245,12 @@ body {
 .btn_dark {
 	background-color: #191919;
 	border: solid black 1px;
+}
+
+.img:hover {
+	transition: 0.5s;
+	height: 300px;
+	width: 400px;
 }
 
 ::-webkit-scrollbar{display: none;}

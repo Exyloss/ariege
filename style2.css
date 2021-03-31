@@ -43,8 +43,6 @@ nav a:hover {
     background-color: #212121;
     width: 100%;
     position: absolute;
-
-
 }
 
 nav ul li:hover .sous{
@@ -64,6 +62,11 @@ nav ul li:hover .sous{
 
 .sous a:hover {
     background-color: black;
+}
+
+.deroulant > a::after {
+	content: " ▼";
+	font-size: 12px;
 }
 
 #slides {
@@ -97,14 +100,13 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	background-color: #191919;
-	height: auto;
 }
 
 .img_container {
 	border-radius: 5px 0px 0px 0px;
 	height: 165px;
 	width: 165px;
-	float: left;
+	float: left;	
 	margin-right: 15px;
 }
 
@@ -181,6 +183,7 @@ input, select {
 }
 
 .container2 img {
+	transition: 0.5s;
 	width: 200px;
 	height: 150px;
 	border-radius: 5px;
@@ -247,6 +250,12 @@ body {
 
 .leaflet-popup-content {
 	color: black;	
+}
+
+.img:hover {
+	transition: 0.5s;
+	height: 300px;
+	width: 400px;
 }
 
 ::-webkit-scrollbar{display: none;}
