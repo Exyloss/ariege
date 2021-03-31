@@ -45,8 +45,6 @@ nav a:hover {
     background-color: #212121;
     width: 100%;
     position: absolute;
-
-
 }
 
 nav ul li:hover .sous{
@@ -68,11 +66,6 @@ nav ul li:hover .sous{
     background-color: black;
 }
 
-.deroulant > a::after {
-    content:" ▼";
-    font-size: 12px;
-}
-
 #slides {
 	width: 600px;
 	height: 400px; 
@@ -84,7 +77,6 @@ nav ul li:hover .sous{
 	width: 600px;
 	height: auto;
 	margin: auto;
-
 	border-radius: 5px;
 	background-color: white;
 }
@@ -96,11 +88,6 @@ nav ul li:hover .sous{
 h1 {
 	text-align: center;
 	font-size: 2.7em;
-}
-
-.logo_ariege {
-	float: left;
-	height: 75px;
 }
 
 .container:hover {
@@ -181,22 +168,21 @@ input {
 	border: 0px solid white;
 }
 
-.container_chateau {
+.container2 {
 	display: flex;
 	flex-direction: row;
 	background-color: white;
 	margin-bottom: 15px;
-	height: auto;
 	border-radius: 5px;
 }
 
-.container_chateau img {
+.container2 img {
 	width: 200px;
 	height: 150px;
 	border-radius: 5px;
 }
 
-.container_chateau p {
+.container2 p {
 	float: left;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -208,8 +194,6 @@ body {
   	background-attachment: fixed;
   	background-size:  auto 100%;
 }
-
-
 
 #div_formulaire {
 	background-color: white;
@@ -227,12 +211,12 @@ body {
 	border-radius: 5px;
 }
 
-#main-container-chateau {
+.main-container {
 	display: flex;
 	flex-direction: row;
 }
 
-#second-container-chateau {
+.second-container {
 	flex: 7;
 }
 
@@ -249,8 +233,6 @@ body {
 
 }
 
-
-
 .left-container ul li{
 	margin-bottom: 15px;
 }
@@ -260,18 +242,9 @@ body {
 	background-color: #6B6B6B;
 }
 
-#main-container-recette {
-	display: flex;
-}
-
-#recette_total {
-	flex: 7;
-}
-
 .btn_dark {
 	background-color: #191919;
 	border: solid black 1px;
 }
-
 
 ::-webkit-scrollbar{display: none;}
