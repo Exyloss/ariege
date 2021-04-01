@@ -8,7 +8,7 @@ Sommaire :
 
 ## 1. Les APIs utilisées
 ### 1. [JQuery](https://jquery.com/)<br>
-JQuery a été utilisé pour simplifier le code javascript. Par exemple `document.getElementById("id")` s'écrit `$("#id")` en JQuery.<br><br>
+JQuery a été utilisé pour simplifier le code javascript. Par exemple `document.getElementById("id")` s'écrit `$("#id")` en JQuery.<br>
 ### 2. [Vegas JS](https://github.com/jaysalvat/vegas)<br>
 Voici le code permettant de créer un diaporama :<br>
 ```javascript
