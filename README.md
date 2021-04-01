@@ -1,6 +1,6 @@
 # Site web ariège
 lien : https://exyloss.github.io <br>
-**Site sur l'Ariège pour le projet de NSI**
+**Site sur l'Ariège pour le projet de NSI**<br>
 Sommaire :
 <ul>
   <li><a href="#api">Liste des APIs utilisées</a></li>
