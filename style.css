@@ -247,6 +247,7 @@ body {
 .btn_dark {
 	background-color: #191919;
 	border: solid black 1px;
+	color: white;
 }
 
 .img:hover {
