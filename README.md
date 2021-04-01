@@ -9,11 +9,7 @@ Sommaire :
   <li><a href="">Explication du code CSS</a></li>
 </ul>
 
-<h2 id="api">1. Les APIs utilisées</h2>
+## 1. Les APIs utilisées
 1. JQuery<br>
 JQuery a été utilisé pour simplifier le code javascript. Par exemple `document` s'écrit `$("#id")` en JQuery.
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+
