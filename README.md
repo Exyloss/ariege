@@ -11,9 +11,9 @@ Sommaire :
 
 <h2 id="api">1. Les APIs utilisées</h2>
 1. JQuery<br>
-JQuery a été utilisé pour simplifier le code javascript. Par exemple 
-    document.getElementById("id")
-s'écrit 
-    $("#id")
-
-en JQuery
+JQuery a été utilisé pour simplifier le code javascript. Par exemple `document` s'écrit `$("#id")` en JQuery.
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
