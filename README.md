@@ -11,5 +11,5 @@ Sommaire :
 
 ## 1. Les APIs utilisées
 1. JQuery<br>
-JQuery a été utilisé pour simplifier le code javascript. Par exemple `document` s'écrit `$("#id")` en JQuery.
+JQuery a été utilisé pour simplifier le code javascript. Par exemple `document.getElementById("id")` s'écrit `$("#id")` en JQuery.
 
