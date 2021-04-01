@@ -93,7 +93,10 @@ nav ul li:hover .sous{
 h1 {
 	text-align: center;
 	font-size: 2.7em;
-	color: white;
+}
+
+.titre {
+	color:white;
 }
 
 .container {
@@ -202,10 +205,6 @@ body {
 	border-radius: 20px;
 	width: 400px;
 	margin: auto;
-}
-
-.titre-form {
-	color: black;
 }
 
 .left-container {
