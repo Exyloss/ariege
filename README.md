@@ -1,4 +1,4 @@
-# Site web sur l'Ariège
+# Site web sur l'Ariège (Projet de NSI)
 lien : https://exyloss.github.io 
 <br><br>
 Sommaire :
