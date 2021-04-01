@@ -4,8 +4,7 @@ lien : https://exyloss.github.io
 Sommaire :
 1. Liste des APIs utilisées
 2. Explication du code Javascript
-3. Explication du code HTML
-4. Explication du code CSS
+3. Explication du code CSS
 
 ## 1. Les APIs utilisées
 ### 1. [JQuery](https://jquery.com/)<br>
@@ -59,9 +58,13 @@ La première ligne de cette fonction permet de créer l'objet carte et de l'ins�
 La deuxième ligne précise à l'API où se situe le serveur hébergeant la carte, puis donne la source de la carte, en l'ocurence OpenStreetMap.<br>
 Enfin, la boucle présente à la fin de la fonction place les marqueurs sur la carte et leur attribue un popup grâce aux clefs du dictionnaire définit plus tôt.
 <br><br>
+
 ## 2. Explication du code JavaScript
 Le code JavaScript est divisé en 4 fonctions :
  - La première permet d'afficher la classe `.recette` lors du clic sur le bouton. les fonctions `show` et `hide` permettent d'animer l'apparition du texte.
  - La fonction `darkTheme()` permet de changer la valeur de l'attribut `href` de la balise `link` pour utiliser la feuille de style `style2.css` afin d'avoir un fond sombre pour les conteneurs.
- - Les deux dernières fonctions attribuent les valeurs des entrées des formulaires à des constantes puis affiche ces valeurs dans un popup `alert`.
-## 3. Explication du code HTML
+ - Les deux dernières fonctions attribuent les valeurs des entrées des formulaires à des constantes puis affiche ces valeurs dans un popup `alert`.<br><br>
+
+## 3. Explication du code CSS
+ - Dans le code HTML du site, la barre de navigation est faite avec des balises `<li>`. Cette barre de navigation possède cette forme grâce aux [flexbox](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Flexbox), c'est un attribut beaucoup plus simple à utiliser que les tableaux.
+ - Le webkit scrollbar permet de modifier la barre de défilement, celle-ci est cachée, malheureusement, cette modification fonctionne uniquement sur le navigateur google chrome.
