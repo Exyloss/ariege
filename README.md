@@ -9,7 +9,7 @@ Sommaire :
   <li><a href="">Explication du code CSS</a></li>
 </ul>
 
-#1. Les APIs utilisées
+# 1. Les APIs utilisées
 
 
 ```html
