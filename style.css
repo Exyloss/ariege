@@ -202,7 +202,10 @@ body {
 	border-radius: 20px;
 	width: 400px;
 	margin: auto;
-	color:black;
+}
+
+legend h1 {
+	color: black;
 }
 
 .left-container {
