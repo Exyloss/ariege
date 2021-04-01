@@ -10,8 +10,6 @@ Sommaire :
 </ul>
 
 <h2 id="api">1. Les APIs utilisées</h2>
-
-
-```html
-<html>test</html>
-```
+1. JQuery<br>
+JQuery a été utilisé pour simplifier le code javascript. Par exemple
+```document.getElementById("id")``` s'écrit ```$("#id")``` en JQuery
