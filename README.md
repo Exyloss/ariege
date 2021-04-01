@@ -1,4 +1,4 @@
-# Site web ariège
+# Site web sur l'Ariège
 lien : https://exyloss.github.io 
 <br><br>
 Sommaire :
@@ -14,7 +14,7 @@ JQuery a été utilisé pour simplifier le code javascript. Par exemple `documen
 Voici le code permettant de créer un diaporama :<br>
 ```javascript
 $('#slides').vegas({
-	delay: 5000,
+  delay: 5000,
   timer: false,
   firstTransition: 'fade',
   firstTransitionDuration: 5000,
@@ -58,4 +58,6 @@ Puis, la fonction `initMap()` est définie. Celle-ci est lancée au début grâc
 La première ligne de cette fonction permet de créer l'objet carte et de l'insérer dans le conteneur "map".<br>
 La deuxième ligne précise à l'API où se situe le serveur hébergeant la carte, puis donne la source de la carte, en l'ocurence OpenStreetMap.<br>
 Enfin, la boucle présente à la fin de la fonction place les marqueurs sur la carte et leur attribue un popup grâce aux clefs du dictionnaire définit plus tôt.
+<br><br>
+## 2. Explication du code JavaScript
 
