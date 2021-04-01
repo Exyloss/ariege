@@ -60,4 +60,8 @@ La deuxième ligne précise à l'API où se situe le serveur hébergeant la cart
 Enfin, la boucle présente à la fin de la fonction place les marqueurs sur la carte et leur attribue un popup grâce aux clefs du dictionnaire définit plus tôt.
 <br><br>
 ## 2. Explication du code JavaScript
-
+Le code JavaScript est divisé en 4 fonctions :
+ - La première permet d'afficher la classe `.recette` lors du clic sur le bouton. les fonctions `show` et `hide` permettent d'animer l'apparition du texte.
+ - La fonction `darkTheme()` permet de changer la valeur de l'attribut `href` de la balise `link` pour utiliser la feuille de style `style2.css` afin d'avoir un fond sombre pour les conteneurs.
+ - Les deux dernières fonctions attribuent les valeurs des entrées des formulaires à des constantes puis affiche ces valeurs dans un popup `alert`.
+## 3. Explication du code HTML
