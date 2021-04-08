@@ -8,7 +8,7 @@
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 	<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	
+
 </head>
 <body>
 	<h1 class="titre">Beaux villages d'Ariège</h1>
@@ -38,7 +38,7 @@
 		<div class="second-container">
 			<div class="container2">
 				<img src="img/foix_village.jfif" class="img">
-				<p>Saint-Lizier :<br><br>Situé sur une petite colline dans la vallée du Salat à quelques kms de St Girons capitale du Couserans, St Lizier est dominé par l'imposante silhouette du palais des évêques du XIVe siècle, face aux pics enneigés des Pyrénées. Ancienne cité gallo-romaine, Evêché du VI ème siècle, la cité est classée parmi les plus beaux villages de France. St Lizier est situé sur un des chemins de St Jacques de Compostelle et possède de nombreux monuments d’époque romane.</p>	
+				<p>Saint-Lizier :<br><br>Situé sur une petite colline dans la vallée du Salat à quelques kms de St Girons capitale du Couserans, St Lizier est dominé par l'imposante silhouette du palais des évêques du XIVe siècle, face aux pics enneigés des Pyrénées. Ancienne cité gallo-romaine, Evêché du VI ème siècle, la cité est classée parmi les plus beaux villages de France. St Lizier est situé sur un des chemins de St Jacques de Compostelle et possède de nombreux monuments d’époque romane.</p>
 			</div>
 			<div class="container2">
 				<img src="img/camon3.jpg" class="img">
@@ -57,14 +57,11 @@
 	</div>
 	<div id="map" style=' height: 300px; border: 1px solid black; border-radius: 5px; margin-bottom: 15px; margin-top: 15px; display: block;color:black'>
 	</div>
-	
+
   	<div style="margin-bottom: 65px"></div>
 	<footer>
 		<p style="color: white;text-indent: 1.5em">Contact : contact@ariege.fr (Ceci est une adresse factice)</p>
 		<button style="color: white;" class="btn_dark" onclick="darkTheme()">Thème sombre</button>
-		<div>
-			<p style="margin-right: 15px;font-size: 0.6em">Sponsored by</p><img src="img/hfc.png" style="height:15px;width:40px">
-		</div>
 	</footer>
 </body>
 </html>
@@ -90,11 +87,11 @@ function initMap() {
 	for (ville in villes) {
 		var marker = L.marker([villes[ville].lat, villes[ville].lon]).addTo(macarte);
 		marker.bindPopup(ville);
-	}               	
+	}
 }
 
 window.onload = function(){
 		// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
-	initMap(); 
+	initMap();
 }
 </script>

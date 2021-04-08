@@ -8,7 +8,7 @@
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 	<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	
+
 </head>
 <body>
 	<h1 class="titre">Les châteaux Ariègeois</h1>
@@ -38,7 +38,7 @@
 		<div class="second-container">
 			<div class="container2">
 				<img src="img/foix2.jpg" class="img">
-				<p>Châteaux de Foix : <br><br>Le château de Foix est un ancien château du XIIᵉ siècle, dont l'origine semble remonter au Xᵉ siècle, remanié à plusieurs reprises et très restauré au XIXᵉ siècle, qui se dresse sur la commune de Foix dans le département de l'Ariège en région Occitanie. Lieu de tourisme important, il est renommé dans toute l'Ariège comme haut-lieu cathare. Il fait l'objet d'un classement au titre des monuments historiques par la liste de 1840.</p>	
+				<p>Châteaux de Foix : <br><br>Le château de Foix est un ancien château du XIIᵉ siècle, dont l'origine semble remonter au Xᵉ siècle, remanié à plusieurs reprises et très restauré au XIXᵉ siècle, qui se dresse sur la commune de Foix dans le département de l'Ariège en région Occitanie. Lieu de tourisme important, il est renommé dans toute l'Ariège comme haut-lieu cathare. Il fait l'objet d'un classement au titre des monuments historiques par la liste de 1840.</p>
 			</div>
 			<div class="container2">
 				<img src="img/usson2.jpg" class="img">
@@ -56,14 +56,11 @@
 	</div>
 	<div id="map" style=' height: 300px; border: 1px solid black; border-radius: 5px; margin-bottom: 15px; margin-top: 15px; display: block;color:black'>
 	</div>
-	
+
   	<div style="margin-bottom: 65px;"></div>
 	<footer>
 		<p style="color: white;text-indent: 1.5em">Contact : contact@ariege.fr (Ceci est une adresse factice)</p>
 		<button class="btn_dark" onclick="darkTheme()">Thème sombre</button>
-		<div>
-			<p style="margin-right: 15px;font-size: 0.6em">Sponsored by</p><img src="img/hfc.png" style="height:15px;width:40px">
-		</div>
 	</footer>
 </body>
 </html>
@@ -90,11 +87,11 @@ function initMap() {
 	for (ville in villes) {
 		var marker = L.marker([villes[ville].lat, villes[ville].lon]).addTo(macarte);
 		marker.bindPopup(ville);
-	}               	
+	}
 }
 
 window.onload = function(){
 		// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
-	initMap(); 
+	initMap();
 }
 </script>

@@ -1,3 +1,4 @@
 les site est disponible en ligne à l'adresse suivante : https://exyloss.github.io
 Une explication du code est disponible ici : https://github.com/Exyloss/Exyloss.github.io/blob/main/README.md
-Il est conseillé d'utiliser chrome pour ouvrir ce site, mais il marche aussi avec firefox.
+/!\Il est conseillé d'utiliser chrome pour ouvrir ce site, mais il marche aussi avec firefox./!\
+/!\Le formulaire produit une erreur 504 sur la version en ligne, pour ne pas avoir cette erreur, il faut utiliser la version locale/!\
