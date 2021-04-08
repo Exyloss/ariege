@@ -6,9 +6,9 @@ $(".voir_plus").on("click",function() {
 	} else if(this.innerHTML=="Voir moins") {
 		$(this).html("Voir plus");
 		$(this).prev().hide(1000);
-		
+
 	}
-	
+
 });
 
 function darkTheme() {
@@ -27,13 +27,21 @@ function formEnvoi() {
 	const aniv = $('#birthday').val();
 	const qualite = $("input[name='title']:checked").val();
 	const nat = $("option:checked").val();
-	alert("Pseudo : "+name+"\nCourriel : "+mail+"\nMot de passe : "+mdp+"\nQualité : "+qualite+"\nDate de naissance : "+aniv+"\nNationalité : "+nat);
-
+	if ($("#mail").is(':invalid') || $("#password").is(':invalid') || $("#name").is(':invalid') || $("#birthday").is(":invalid") || (qualite!="Mme." && qualite!="M.")) {
+		alert("Vous n'avez pas remplit tout les champs");
+	} else {
+		alert("Pseudo : "+name+"\nCourriel : "+mail+"\nMot de passe : "+mdp+"\nQualité : "+qualite+"\nDate de naissance : "+aniv+"\nNationalité : "+nat);
+	}
 };
+
 
 function formEnvoi2() {
 	let msg = $("#msg").val();
-	alert("Votre message : \n"+msg);
+	if(msg != "") {
+		alert("Votre message : \n"+msg);
+	} else {
+		alert("Vous n'avez pas saisit de message.");
+	}
 };
 
 

@@ -1,0 +1,3 @@
+les site est disponible en ligne à l'adresse suivante : https://exyloss.github.io
+Une explication du code est disponible ici : https://github.com/Exyloss/Exyloss.github.io/blob/main/README.md
+Il est conseillé d'utiliser chrome pour ouvrir ce site, mais il marche aussi avec firefox.

@@ -60,7 +60,7 @@
             </select>
       </div>
     		<div class="button">
-        		<button type="submit" onclick="formEnvoi()" class="btn">Valider</button>
+        		<button type="submit" id="submit" onclick="formEnvoi()" class="btn">Valider</button>
             <button type="reset" class="btn">Annuler</button>
     		</div>
 		</form>
@@ -70,7 +70,7 @@
     <form method="get">
       <div>
         <label for="msg">Message</label><br>
-        <textarea rows="5" cols="40" id="msg"></textarea>
+        <textarea rows="5" cols="auto" id="msg" required></textarea><br>
         <a href="javascript:void(0)" onclick="RisiBank.activate('msg')">
           <img style="width: 120px" src="https://risibank.fr/src/picts/banner-light.png">
         </a>
