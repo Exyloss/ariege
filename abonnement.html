@@ -4,8 +4,6 @@
 	<title>Abonnement</title>
   <link rel="icon" type="img/png" href="img/ariege_logo3.png" />
 	<link rel="stylesheet" type="text/css" href="style.css" id="style">
-  <script src="https://risibank.fr/script/risibank.js"></script>
-  <link href="https://risibank.fr/script/risibank.css" rel="stylesheet" type="text/css" media="all">
   <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </head>
@@ -71,16 +69,12 @@
       <div>
         <label for="msg">Message</label><br>
         <textarea rows="5" cols="auto" id="msg" required></textarea><br>
-        <a href="javascript:void(0)" onclick="RisiBank.activate('msg')">
-          <img style="width: 120px" src="https://risibank.fr/src/picts/banner-light.png">
-        </a>
       </div>
       <div class="button">
         <button type="submit" onclick="formEnvoi2()" class="btn">Envoyer</button>
         <button type="reset" class="btn">Effacer</button>
       </div>
     </form>
-    <p id="contact"></p>
   </fieldset>
   </div>
   <div style="margin-bottom: 65px"></div>
