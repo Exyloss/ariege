@@ -1,5 +1,5 @@
 # Site web sur l'Ariège (Projet de NSI)
-lien : https://exyloss.github.io 
+lien : https://exyloss.github.io/ariege
 <br><br>
 Sommaire :
 1. Liste des APIs utilisées
