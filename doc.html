@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>README</title>
+  <title>Documentation</title>
   <style>
     html {
       line-height: 1.5;
@@ -82,9 +82,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: monospace;
       font-size: 85%;
       margin: 0;
+      color: #ba2121;
     }
     pre {
       margin: 1em 0;
@@ -257,9 +258,20 @@ Sommaire :
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="bu">window</span><span class="op">.</span><span class="at">onload</span> <span class="op">=</span> <span class="kw">function</span>(){</span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">initMap</span>()<span class="op">;</span> </span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<p>Tout d’abord, le dictionnaire au début du programme permet de lier un nom de château à des coordonnées.<br> Puis, la fonction <code>initMap()</code> est définie. Celle-ci est lancée au début grâce à <code>window.onload</code>.<br> La première ligne de cette fonction permet de créer l’objet carte et de l’insérer dans le conteneur “map”.<br> La deuxième ligne précise à l’API où se situe le serveur hébergeant la carte, puis donne la source de la carte, en l’ocurence OpenStreetMap.<br> Enfin, la boucle présente à la fin de la fonction place les marqueurs sur la carte et leur attribue un popup grâce aux clefs du dictionnaire définit plus tôt. <br><br></p>
+<p style="text-indent: 15px;">Tout d’abord, le dictionnaire au début du programme permet de lier un nom de château à des coordonnées.</p>
+<p style="text-indent: 15px;">Puis, la fonction <code>initMap()</code> est définie. Celle-ci est lancée au début grâce à <code>window.onload</code>.</p>
+ <p style="text-indent: 15px;">La première ligne de cette fonction permet de créer l’objet carte et de l’insérer dans le conteneur “map”.</p>
+ <p style="text-indent: 15px;">La deuxième ligne précise à l’API où se situe le serveur hébergeant la carte, puis donne la source de la carte, en l’ocurence OpenStreetMap.</p>
+ <p style="text-indent: 15px;">Enfin, la boucle présente à la fin de la fonction place les marqueurs sur la carte et leur attribue un popup grâce aux clefs du dictionnaire définit plus tôt.</p>
+   <br><br></p>
 <h2 id="explication-du-code-javascript">2. Explication du code JavaScript</h2>
-<p>Le code JavaScript est divisé en 4 fonctions : - La première permet d’afficher la classe <code>.recette</code> lors du clic sur le bouton. les fonctions <code>show</code> et <code>hide</code> permettent d’animer l’apparition du texte. - La fonction <code>darkTheme()</code> permet de changer la valeur de l’attribut <code>href</code> de la balise <code>link</code> pour utiliser la feuille de style <code>style2.css</code> afin d’avoir un fond sombre pour les conteneurs. - Les deux dernières fonctions attribuent les valeurs des entrées des formulaires à des constantes puis affiche ces valeurs dans un popup <code>alert</code>.<br><br></p>
+Le code JavaScript est divisé en 4 fonctions :
+<ul>
+	<li>La première permet d’afficher la classe <code>.recette</code> lors du clic sur le bouton.</li>
+	<li> les fonctions <code>show</code> et <code>hide</code> permettent d’animer l’apparition du texte.</li>
+	<li> La fonction <code>darkTheme()</code> permet de changer la valeur de l’attribut <code>href</code> de la balise <code>link</code> pour utiliser la feuille de style <code>style2.css</code> afin d’avoir un fond sombre pour les conteneurs.</li>
+	<li> Les deux dernières fonctions attribuent les valeurs des entrées des formulaires à des constantes puis affiche ces valeurs dans un popup <code>alert</code>.</li><br><br>
+</ul>
 <h2 id="explication-du-code-css">3. Explication du code CSS</h2>
 <ul>
 <li>Dans le code HTML du site, la barre de navigation est faite avec des balises <code>&lt;li&gt;</code>. Cette barre de navigation possède cette forme grâce aux <a href="https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Flexbox" class="external">flexbox</a>, c’est un attribut beaucoup plus simple à utiliser que les tableaux.</li>
