@@ -271,10 +271,6 @@ body {
     }
     .container {
     	border: 1px solid black;
-    	border-radius: 5px;
-    	margin-bottom: 15px;
-    	display: flex;
-    	flex-direction: column;
     	background-color: #191919;
     }
     
@@ -300,38 +296,19 @@ body {
     }
     
     #form_contact {
-    	border-radius: 20px;
     	border: 0px solid #191919;
     }
     
     .container2 {
-    	display: flex;
-    	flex-direction: row;
     	background-color: #191919;
-    	margin-bottom: 15px;
-    	border-radius: 5px;
-    }
-    
-    body {
-    	background-image: url('img/paysage4.jfif');
-      	background-repeat: no-repeat;
-      	background-attachment: fixed;
-      	background-size:  auto 100%;
     }
     
     #div_formulaire {
     	background-color: #191919;
-    	border-radius: 20px;
-    	width: 400px;
-    	margin: auto;
     }
     
     .left-container {
-    	flex: 1;
     	background-color: #191919;
-    	margin-right: 15px;
-    	margin-bottom: 15px;
-    	border-radius: 5px;
     }
 
     .left-container ul li a:hover {
@@ -340,22 +317,11 @@ body {
     }
     
     .voir_plus:hover {
-    	transition: 0.3s;
 	    background-color: #6B6B6B;
     }
     
     .btn_dark {
     	background-color: #191919;
     	border: solid black 1px;
-    }
-    
-    .leaflet-popup-content {
-    	color: black;	
-    }
-    
-    .img:hover {
-    	transition: 0.5s;
-    	height: 300px;
-    	width: 400px;
     }
 }
