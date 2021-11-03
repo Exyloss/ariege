@@ -260,3 +260,268 @@ body {
 }
 
 ::-webkit-scrollbar{display: none;}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    * {
+    	color: white;
+    }
+    
+    nav {
+        width: 100%;
+        margin: auto;
+        background-color: #191919;
+        top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: #191919;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav ul li {
+        width: 25%;
+        text-align: center;
+        position: relative;
+    
+    }
+    
+    nav a {
+        display: block;
+        text-decoration: none;
+        padding: 10px 0px;
+    }
+    
+    nav a:hover {
+    	transition: 0.3s;
+        background-color: black;
+    }
+    
+    .sous {
+        display: none;
+        background-color: #212121;
+        width: 100%;
+        position: absolute;
+    }
+    
+    nav ul li:hover .sous{
+        display: block;
+    }
+    
+    .sous li {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .sous a {
+        padding: 10px;
+        border-radius: 0px;
+    }
+    
+    .sous a:hover {
+        background-color: black;
+    }
+    
+    .deroulant > a::after {
+    	content: " ▼";
+    	font-size: 12px;
+    }
+    
+    #slides {
+    	width: 600px;
+    	height: 400px; 
+    	margin: auto;
+    	border-radius: 5px;
+    }
+    
+    #main-container {
+    	width: 600px;
+    	height: auto;
+    	margin: auto;
+    	border-radius: 5px;
+    	background-color: #191919;
+    }
+    
+    #main-container p {
+    	padding: 15px;
+    }
+    
+    h1 {
+    	text-align: center;
+    	font-size: 2.7em;
+    }
+    
+    .container {
+    	border: 1px solid black;
+    	border-radius: 5px;
+    	margin-bottom: 15px;
+    	display: flex;
+    	flex-direction: column;
+    	background-color: #191919;
+    }
+    
+    .img_container {
+    	border-radius: 5px 0px 0px 0px;
+    	height: 165px;
+    	width: 165px;
+    	float: left;	
+    	margin-right: 15px;
+    }
+    
+    .container button {
+    	border: none;
+    	border-radius: 0px 0px 5px 5px;
+    	background-color: black;
+    }
+    
+    .container p {
+    	margin-right: 15px;
+    }
+    
+    .recette {
+    	margin-left: 15px;
+    	margin-right: 15px;
+    }
+    
+    .container div {
+    	display: flex;
+    	flex-direction: row;
+    }
+    
+    footer {
+    	background-color: #191919;
+    	position: fixed;
+    	bottom: 0; 
+    	left: 0; 
+    	right: 0;
+    	height: 50px;
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-between;
+    }
+    
+    form div {
+    	margin-bottom: 15px;
+    }
+    
+    input:invalid {
+    	border-color: #C22727;
+    }
+    
+    input, select {
+    	border-radius: 5px;
+    	border: black solid 2px;
+    	background-color: #212121;
+    }
+    
+    .btn, textarea{
+    	background-color:  #212121;
+    	border: solid black 1px;
+    }
+    
+    
+    #formulaire {
+    	border-radius: 20px;
+    	border: 0px;
+    	margin-top: 20px;
+    	padding: 10px;
+    }
+    
+    #form_contact {
+    	border-radius: 20px;
+    	border: 0px solid #191919;
+    }
+    
+    .container2 {
+    	display: flex;
+    	flex-direction: row;
+    	background-color: #191919;
+    	margin-bottom: 15px;
+    	border-radius: 5px;
+    }
+    
+    .container2 img {
+    	transition: 0.5s;
+    	width: 200px;
+    	height: 150px;
+    	border-radius: 5px;
+    }
+    
+    .container2 p{
+    	margin-left: 10px;
+    	margin-right: 10px;
+    }
+    
+    body {
+    	background-image: url('img/paysage4.jfif');
+      	background-repeat: no-repeat;
+      	background-attachment: fixed;
+      	background-size:  auto 100%;
+    }
+    
+    #div_formulaire {
+    	background-color: #191919;
+    	border-radius: 20px;
+    	width: 400px;
+    	margin: auto;
+    }
+    
+    .left-container {
+    	flex: 1;
+    	background-color: #191919;
+    	margin-right: 15px;
+    	margin-bottom: 15px;
+    	border-radius: 5px;
+    }
+    
+    .main-container {
+    	display: flex;
+    	flex-direction: row;
+    }
+    
+    .second-container {
+    	flex: 7;
+    }
+    
+    .left-container ul li a {
+    	text-decoration: none;
+    }
+    
+    .left-container ul li a:hover {
+    	border-bottom: solid #9E9E9E 1px;
+    	color: #9E9E9E;
+    }
+    
+    .left-container ul li{
+    	margin-bottom: 15px;
+    }
+    
+    .voir_plus:hover {
+    	transition: 0.3s;
+	    background-color: #6B6B6B;
+    }
+    
+    .btn_dark {
+    	background-color: #191919;
+    	border: solid black 1px;
+    }
+    
+    .leaflet-popup-content {
+    	color: black;	
+    }
+    
+    .img:hover {
+    	transition: 0.5s;
+    	height: 300px;
+    	width: 400px;
+    }
+}
